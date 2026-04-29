@@ -282,6 +282,7 @@ services:
       - "${FRONTEND_PORT}"
     environment:
       - PORT=${FRONTEND_PORT}
+      - IMAGE_PROVIDER_ADDR=http://image-provider:8081
       - FRONTEND_ADDR
       - AD_ADDR
       - CART_ADDR
